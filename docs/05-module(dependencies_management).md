@@ -10,3 +10,8 @@
   * command used: **go test** //similar to npm install
 * version of go modules uses semantic versioning like major.minor.patch
 * **direct and indirect** modules, direct are which are explicitly called.
+
+## Refer
+
+002-hello-module
+002-module-with-dependencies
