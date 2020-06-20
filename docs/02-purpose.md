@@ -2,9 +2,9 @@
 
 "Go is more about software engineering than programming language research" - Rob Pike
 
-## Why Go?
+## Why Go
 
-**Pain points**
+**Pain points**:
 
 * Slow build
 * uncontrolled dependencies
@@ -16,7 +16,7 @@
 * difficulties of writing automatic tools
 * cross language builds
 
-**With Go**
+**With Go**:
 
 * Take advantage of multicore, and very less was done by existing languages to take advantages of multicore effectively and safely. Go provide first class support to multi-core.
   * safe automatic memory management
@@ -24,7 +24,7 @@
   * other resource management
 * efficient compilation, builds and execution
 * Over complexity of other language like C++, Java, C#
-  * deals with large codebases. large dependencies, large team, clear syntax, clear sementics - Go makes it easy
+  * deals with large code-bases. large dependencies, large team, clear syntax, clear semantics - Go makes it easy
   * like C, so that its not much radical, so that engineers can easily become productive.
   * code formatting
   * take advantages of modern tooling
@@ -32,7 +32,7 @@
 
 ## Dates
 
-* Dual core or multicore: 2005 ish
+* Dual core or multi-core: 2005 ish
 * Go planning, and work started: 2006
 * Go became open source: 2009
 * Go V1 released: 2012
@@ -45,13 +45,13 @@
 
 ## Go outstand at
 
+* system programming
 * web services at scale
 * networking: http, tcp/udp
 * load-balancing
 * concurrency /parallelism
-* system proramming
 * automation and CLI tools
-* cyptography
+* cryptography
 * image processing
 * mobile applications
 * MI

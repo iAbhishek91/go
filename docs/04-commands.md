@@ -6,11 +6,11 @@
 * **go env**: go related env variables are printed.
 
 * **go fmt <file_name>**: automatically format a code.
-  * **go fmt ./...**: format everything in a directory recusively.
+  * **go fmt ./...**: format everything in a directory recursively.
 
 * **go run <file_name>**: build and execute a file.
 
-* **go build**: builds the file with the name of the current dir, in the currenr dir. Assuming it as the project name. It can be single file or  a entire project.
+* **go build**: builds the file with the name of the current dir, in the current dir. Assuming it as the project name. It can be single file or  a entire project.
 
 * **go install**: build the file with name installation of the project in GOBIN directory.
 
