@@ -14,14 +14,12 @@ type simple struct {
 
 // set a method with pointer receiver
 func (s *simple) setDefault() {
-	s.a = 1
-	s.b = "a"
-}
-
-// set a method with pointer receiver, kind of parameterized constructor
-func (s *simple) initSimple(a int, b string) {
-	s.a = a
-	s.b = b
+	if s.a == 0 { // apply the change if the value corresponds to zero value
+		s.a = 1
+	}
+	if s.b == "" { // apply the change if the value corresponds to zero value
+		s.b = "a"
+	}
 }
 
 
@@ -33,9 +31,4 @@ func main() {
 	// set the default values
 	simpleInstance.setDefault();
 	fmt.Println(simpleInstance)
-	
-	// kind of parameterized constructor
-	// set the default values
-	simpleInstance.initSimple(-1, "000");
-  fmt.Println(simpleInstance)
 }
