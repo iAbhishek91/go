@@ -13,6 +13,7 @@ type simple struct {
 
 func (s *simple) print() {
 	fmt.Println(s)
+	fmt.Println(*s)
 }
 
 func (s *simple) setValue(a int, b string) {
@@ -22,15 +23,19 @@ func (s *simple) setValue(a int, b string) {
 
 
 func main() {
-	// declare a pointer variable
-	s := &simple{1, "a"}
+	// declare a variable
+	s := simple{1, "a"}
 
-	// Go compiler will perform auto reference to the value from the address
+	// Go compiler will perform auto reference to the value 
 	s.print()
-	// Output: {1 a}
+	// Output:
+	// &{1 a}
+	// {1 a}
 
-	// Go compiler will perform auto reference to the value from the address
+	// Go compiler will perform auto reference to the value
 	s.setValue(2, "b")
 	s.print()
-	// Output: {2 b}
+	// Output: 
+	// &{2 b}
+	// {2 b}
 }
