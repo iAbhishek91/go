@@ -1,4 +1,7 @@
 /* demstrate how rune literal are expressed */
+/*
+A letter of an ancient Greek alphabate or sometime roman alphabet as well.
+*/
 
 package main
 

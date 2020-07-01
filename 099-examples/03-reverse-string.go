@@ -17,14 +17,14 @@ func main() {
 func reverseString(str string) string {
 	// VALIDATE THEN INPUT
 
-	var revStr string
+	// Not mutating the string
+  length := len(str)
+	runes := make([]rune, length)
 
-	for i := 0; i < len(str) ; i++ {
-		// this solution is not best one at least from performance activities
-		// strings are IMMUTABLE https://golang.org/ref/spec#String_types
-		revStr = revStr + string(str[len(str) - i - 1])
+	for i, rune := range str {
+		length--
+		runes[length] = rune
+	}	
 
-	}
-
-	return revStr
+	return string(runes)
 }
