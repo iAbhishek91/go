@@ -40,6 +40,12 @@ func main() {
 	// This change will not impact slice3 as before, as slice3 is in different array
 	slice2[2] = 311
 	printSlice(slice3)
+
+	// Append two slice
+	slice4 := []int{1,2}
+	slice5 := []int{3,4}
+	slice6 := append(slice4, slice5...)
+	printSlice(slice6)
 }
 
 

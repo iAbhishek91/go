@@ -3,22 +3,25 @@
 package main
 
 import "fmt"
+import "sort"
 
 func main() {
 	firstArr := []int{1,2,3,4}
 	secondArr := []int{3,4,6}
 
-	// remember everything is pass by value in Go, use pointers 
-	mergeAndSort(&firstArr, &secondArr)
+  // since the data are of type slice we are not using address
+	mergeAndSortUsingDefinedFunction(firstArr, secondArr)
 }
 
 
-func mergeAndSort(firstArr []int, secondArr []int) {
+func mergeAndSortUsingDefinedFunction(firstArr []int, secondArr []int) {
 	// VALIDATE the input
 
-	largeArr := len(firstArr) > len(secondArr) ? firstArr : secondArr
-
-	var mergedList []int
+	// MERGE both the slices
+	mergedAndSortedArr := append(firstArr, secondArr...)
+	sort.Ints(mergedAndSortedArr)
 	
-	for i, element
+	
+	// for i, element
+	fmt.Println(mergedAndSortedArr)
 }
