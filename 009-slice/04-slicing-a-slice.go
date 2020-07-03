@@ -19,7 +19,7 @@ func main() {
 	// step-2: create a new slice from slice1 starting from 3rd element till 4th element
 	// slice[i, j]
 	// i represent the starting index of the new slice from the new slice. hence slice1[i] == slice2[0]
-	// j length from the original array. here 4 is the total length from slice1, but the slice starts from 3rd
+	// j is length of array new array in context with the original array
 	// hence length is 2
 	slice2 := slice1[2:4] // value: 3,4
   printSlice(slice2)
