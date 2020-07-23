@@ -7,26 +7,26 @@ import (
 )
 
 type employee struct {
-	FirstName string // should be capital in order to work
-	LastName string
+	firstName string
+	lastName string
 }
 
 func main() {
 	fmt.Println("Marshell JSON")
 
 	abhi := employee{
-		FirstName: "abhishek",
-    LastName: "das",
+		firstName: "abhishek",
+    lastName: "das",
 	}
 
 	su := employee{
-		FirstName: "sutapa",
-		LastName: "chattaraj",
+		firstName: "sutapa",
+		lastName: "chattaraj",
 	}
 
 	malpa := employee{
-		FirstName: "malpa",
-		LastName: "bajpai",
+		firstName: "malpa",
+		lastName: "bajpai",
 	}
 
 	xe := []employee{abhi,su,malpa}
@@ -38,5 +38,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println("JSON data:", string(bs)) //{"FirstName":"abhishek","LastName":"das"},{"FirstName":"sutapa","LastName":"chattaraj"},{"FirstName":"malpa","LastName":"bajpai"}]
+	fmt.Println("JSON data:", string(bs)) // empty as fields need to be exported
 }
